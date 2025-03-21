@@ -1,4 +1,4 @@
-# SendbirdAIAgentCore
+# SendbirdAIAgentCore (Beta)
 
 ## Overview
 
