@@ -5,7 +5,7 @@ let package = Package(
     name: "SendbirdAIAgentCore",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "SendbirdAIAgentCore", targets: ["SendbirdAIAgentCore"])
+        .library(name: "SendbirdAIAgentCore", targets: ["SendbirdAIAgentCoreTarget"])
     ],
     dependencies: [
         .package(
