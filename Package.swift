@@ -12,7 +12,6 @@ let package = Package(
             name: "SendbirdChatSDK",
             url: "https://github.com/sendbird/sendbird-chat-sdk-ios",
             revision: "256c46a73e5d545e7e1ca4f98750e39d35c3cdbe"
-//            from: "4.25.2-beta.1"
         ),
         .package(
             name: "MarkdownUI",
