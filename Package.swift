@@ -18,14 +18,14 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/sendbird/sendbird-uikit-ios-spm",
-            branch: "release/3.30.1-beta.1"
+            branch: "release/3.30.1-beta.2"
         )
     ],
     targets: [
         .binaryTarget(
             name: "SendbirdAIAgentCore",
-            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.0.2/SendbirdAIAgentCore.xcframework.zip",
-            checksum: "72a453bc32ba298cdeeb002480fcc38da68e16447c5634d182d780e0cca7b79c"
+            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.0.3/SendbirdAIAgentCore.xcframework.zip",
+            checksum: "333c583797d17d802ca68ca786bad8e189b0a9649aa28ab5ad80778d7faba62f"
         ),
         .target(
             name: "SendbirdAIAgentCoreTarget",
