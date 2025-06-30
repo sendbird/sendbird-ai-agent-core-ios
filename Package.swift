@@ -1,4 +1,4 @@
-// swift-tools-version:5.10
+// swift-tools-version:6.1
 import PackageDescription
 
 let package = Package(
@@ -37,7 +37,8 @@ let package = Package(
                 .target(name: "SendbirdAIAgentCore"),
                 .product(name: "SendbirdUIMessageTemplate", package: "sendbird-uikit-ios-spm"),
                 .product(name: "MarkdownUI", package: "swift-markdown-ui"),
-                .product(name: "Splash", package: "Splash")
+                .product(name: "Splash", package: "Splash"),
+                .product(name: "SendbirdChatSDK", package: "sendbird-chat-sdk-ios")
             ],
             path: "Framework/Dependency"
         )
