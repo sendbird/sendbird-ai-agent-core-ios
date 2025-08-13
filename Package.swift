@@ -1,4 +1,4 @@
-// swift-tools-version:6.1
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
@@ -28,8 +28,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SendbirdAIAgentCore",
-            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.9.14/SendbirdAIAgentCore.xcframework.zip",
-            checksum: "3cc87b636de6d61daa4205a2164f003aefce623db8b4a6ef85027d751d7eb744"
+            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.9.16/SendbirdAIAgentCore.xcframework.zip",
+            checksum: "0a8e3405726489045626ebdf254a4286eb6683968e715efd6ab49fe1ed313b03"
         ),
         .target(
             name: "SendbirdAIAgentCoreTarget",
@@ -42,5 +42,6 @@ let package = Package(
             ],
             path: "Framework/Dependency"
         )
-    ]
+    ],
+    swiftLanguageModes: [.v5]
 )
