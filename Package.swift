@@ -9,8 +9,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/gonzalezreal/swift-markdown-ui",
-            from: "2.4.1"
+            url: "https://github.com/sendbird/sendbird-cocoapods",
+            branch: "main"
         ),
         .package(
             url: "https://github.com/JohnSundell/Splash",
@@ -36,7 +36,7 @@ let package = Package(
             dependencies: [
                 .target(name: "SendbirdAIAgentCore"),
                 .product(name: "SendbirdUIMessageTemplate", package: "sendbird-uikit-ios-spm"),
-                .product(name: "MarkdownUI", package: "swift-markdown-ui"),
+                .product(name: "SendbirdMarkdownUI", package: "sendbird-cocoapods"),
                 .product(name: "Splash", package: "Splash"),
                 .product(name: "SendbirdChatSDK", package: "sendbird-chat-sdk-ios")
             ],
