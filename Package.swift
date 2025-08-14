@@ -9,8 +9,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/sendbird/sendbird-cocoapods",
-            branch: "main"
+            url: "https://github.com/sendbird/sendbird-ios-distribution",
+            from: "0.10.2"
         ),
         .package(
             url: "https://github.com/JohnSundell/Splash",
@@ -28,15 +28,15 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SendbirdAIAgentCore",
-            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.10.2/SendbirdAIAgentCore.xcframework.zip",
-            checksum: "72f5d77abf99cd83ba8f14129403b5338c981f5ef4f782d4ef1e746ab4b250fd"
+            url: "https://github.com/sendbird/sendbird-ai-agent-core-ios/releases/download/0.10.1/SendbirdAIAgentCore.xcframework.zip",
+            checksum: "669e3bb7cc934166bf96440d5d1ad1b89a391ce5ec212f0925458e14a54ed231"
         ),
         .target(
             name: "SendbirdAIAgentCoreTarget",
             dependencies: [
                 .target(name: "SendbirdAIAgentCore"),
                 .product(name: "SendbirdUIMessageTemplate", package: "sendbird-uikit-ios-spm"),
-                .product(name: "SendbirdMarkdownUI", package: "sendbird-cocoapods"),
+                .product(name: "SendbirdMarkdownUI", package: "sendbird-ios-distribution"),
                 .product(name: "Splash", package: "Splash"),
                 .product(name: "SendbirdChatSDK", package: "sendbird-chat-sdk-ios")
             ],
