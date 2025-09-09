@@ -10,7 +10,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/sendbird/sendbird-ios-distribution",
-            from: "0.10.2"
+            from: "0.10.6"
         ),
         .package(
             url: "https://github.com/JohnSundell/Splash",
