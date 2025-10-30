@@ -10,7 +10,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/sendbird/sendbird-ios-distribution",
-            from: "0.10.6"
+            from: "0.10.8"
         ),
         .package(
             url: "https://github.com/JohnSundell/Splash",
@@ -18,11 +18,11 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/sendbird/sendbird-uikit-ios-spm",
-            from: "3.32.2"
+            from: "3.32.3"
         ),
         .package(
             url: "https://github.com/sendbird/sendbird-chat-sdk-ios",
-            from: "4.31.1"
+            from: "4.32.0"
         )
     ],
     targets: [
